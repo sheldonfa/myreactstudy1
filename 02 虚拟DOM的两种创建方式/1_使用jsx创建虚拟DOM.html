@@ -19,7 +19,11 @@
      <!-- 此处一定要写bable -->
      <script type="text/babel">
         // 1. 创建虚拟DOM
-        const VDOM = <h1 id="title"><span>Hello, React!</span></h1> /* 此处一定不要写引号，因为这里不是字符串，而是JSX，Babel会自动转换为JS */
+        const VDOM = (
+            <h1 id="title">
+                <span>Hello, React!</span>
+            </h1>
+        )
         // 2. 渲染虚拟DOM到页面
         ReactDOM.render(VDOM, document.getElementById('test'))
      </script> 
